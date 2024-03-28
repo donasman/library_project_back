@@ -153,14 +153,14 @@
         update
             book_tb
         set
-            book_name = #{bookName}
-            author_name = #{authorName}
-            publisher_name = #{publisherName}
-            isbn = #{isbn}
-            category_id = #{categoryId}
-            book_type_id = #{bookTypeId}
-            cover_img_url = #{coverImgUrl}
-            update_date = #{updateDate}
+            book_name = #{bookName},
+            author_name = #{authorName},
+            publisher_name = #{publisherName},
+            isbn = #{isbn},
+            category_id = #{categoryId},
+            book_type_id = #{bookTypeId},
+            cover_img_url = #{coverImgUrl},
+            update_date = now()
         where
             book_id = #{bookId}
 
